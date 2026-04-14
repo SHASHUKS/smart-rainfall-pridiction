@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Agriculture</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        🌱 Smart Rainfall & Crop Prediction
+    </div>
+
+    <form action="/predict" method="POST">
+
+        <div class="group-box temp-box">
+            <label>Temperature</label>
+            <input type="number" name="temperature" required>
+        </div>
+
+        <div class="group-box hum-box">
+            <label>Humidity</label>
+            <input type="number" name="humidity" required>
+        </div>
+
+        <div class="group-box ph-box">
+            <label>Soil pH</label>
+            <input type="number" name="ph" required>
+        </div>
+
+        <div class="group-box soil-box">
+            <label>Soil Type</label>
+            <select name="soil">
+                <option>Loamy</option>
+                <option>Sandy</option>
+                <option>Clay</option>
+            </select>
+        </div>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

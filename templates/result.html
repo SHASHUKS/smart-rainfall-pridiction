@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        🌾 Prediction Result
+    </div>
+
+    <div class="group-box" style="background:green; color:white;">
+        🌧️ Rainfall: {{ rainfall }} (Normal)
+    </div>
+
+    <div class="group-box" style="background:blue; color:white;">
+        🌱 Crop: {{ crop }}
+    </div>
+
+    <div class="group-box" style="background:#6c757d; color:white;">
+        📘 Reason: {{ reason }}
+    </div>
+
+    <!-- 📧 EMAIL FORM -->
+    <form action="/send_email" method="POST">
+
+        <input type="hidden" name="rainfall" value="{{ rainfall }}">
+        <input type="hidden" name="crop" value="{{ crop }}">
+        <input type="hidden" name="reason" value="{{ reason }}">
+
+        <div class="group-box email-box">
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="group-box msg-box">
+            <label>Message</label>
+            <textarea name="message" required></textarea>
+        </div>
+
+        <button type="submit">Send Email</button>
+
+    </form>
+
+    <a href="/" style="display:block; text-align:center; margin-top:10px;">⬅ Back</a>
+
+</div>
+
+</body>
+</html>

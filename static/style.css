@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    background: url('/static/bg.jpeg') no-repeat center center/cover;
+    margin: 0;
+}
+
+.container {
+    width: 420px;
+    margin: 60px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.header {
+    background: green;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.group-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.temp-box { background: #ff6b6b; }
+.hum-box { background: #4dabf7; }
+.ph-box { background: #845ef7; }
+.soil-box { background: #f59f00; }
+.email-box { background: #20c997; }
+.msg-box { background: #adb5bd; }
+
+input, select, textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

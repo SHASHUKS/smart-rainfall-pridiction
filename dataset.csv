@@ -1,0 +1,11 @@
+temperature,humidity,ph,rainfall,soil_type,crop
+30,70,6.5,200,Loamy,Rice
+25,60,6.0,150,Sandy,Wheat
+28,65,6.8,180,Clay,Maize
+32,75,5.5,220,Loamy,Rice
+20,55,7.0,120,Sandy,Barley
+27,68,6.2,160,Clay,Maize
+29,72,6.4,210,Loamy,Rice
+24,58,6.1,140,Sandy,Wheat
+26,66,6.7,170,Clay,Maize
+31,74,5.8,230,Loamy,Rice
